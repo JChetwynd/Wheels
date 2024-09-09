@@ -114,7 +114,7 @@ namespace EngineTests
 
             Player player1 = new Player(new Crown(5), new Wall(5), [warrior, mage], spinner);
 
-
+             
             string json = JsonSerializer.Serialize(player1);
         }
 
