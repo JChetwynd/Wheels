@@ -1,0 +1,284 @@
+{
+  "Crown": { "Health": 5 },
+  "Wall": { "MaxHeight": 5 },
+  "Figures": [
+    {
+      "CurrentLevel": 1,
+      "CurrentXp": 0,
+      "FigureStats": {
+        "Level1": {
+          "PointsToAct": 3,
+          "DamageToCrown": 3,
+          "DamageToWall": 3,
+          "XpToLevelUp": 5,
+          "Attacks": [ 0 ]
+        },
+        "Level2": {
+          "PointsToAct": 3,
+          "DamageToCrown": 5,
+          "DamageToWall": 3,
+          "XpToLevelUp": 5,
+          "Attacks": [ 0 ]
+        },
+        "Level3": {
+          "PointsToAct": 3,
+          "DamageToCrown": 7,
+          "DamageToWall": 3,
+          "XpToLevelUp": 5,
+          "Attacks": [ 0 ]
+        }
+      }
+    },
+    {
+      "CurrentLevel": 1,
+      "CurrentXp": 0,
+      "FigureStats": {
+        "Level1": {
+          "PointsToAct": 5,
+          "DamageToCrown": 2,
+          "DamageToWall": 2,
+          "XpToLevelUp": 5,
+          "Attacks": [ 0 ]
+        },
+        "Level2": {
+          "PointsToAct": 4,
+          "DamageToCrown": 3,
+          "DamageToWall": 3,
+          "XpToLevelUp": 5,
+          "Attacks": [ 0 ]
+        },
+        "Level3": {
+          "PointsToAct": 4,
+          "DamageToCrown": 3,
+          "DamageToWall": 5,
+          "XpToLevelUp": 5,
+          "Attacks": [ 0, 6 ]
+        }
+      }
+    }
+  ],
+  "PlayerSpinner": {
+    "WheelSet": [
+      {
+        "WheelFaces": [
+          {
+            "Symbol": 1,
+            "Value": 1,
+            "XpBonus": false
+          },
+          {
+            "Symbol": 2,
+            "Value": 1,
+            "XpBonus": false
+          },
+          {
+            "Symbol": 1,
+            "Value": 1,
+            "XpBonus": false
+          },
+          {
+            "Symbol": 2,
+            "Value": 1,
+            "XpBonus": true
+          },
+          {
+            "Symbol": 1,
+            "Value": 1,
+            "XpBonus": false
+          },
+          {
+            "Symbol": 0,
+            "Value": 1,
+            "XpBonus": false
+          },
+          {
+            "Symbol": 2,
+            "Value": 2,
+            "XpBonus": true
+          },
+          {
+            "Symbol": 0,
+            "Value": 1,
+            "XpBonus": false
+          }
+        ]
+      },
+      {
+        "WheelFaces": [
+          {
+            "Symbol": 1,
+            "Value": 1,
+            "XpBonus": true
+          },
+          {
+            "Symbol": 2,
+            "Value": 1,
+            "XpBonus": false
+          },
+          {
+            "Symbol": 1,
+            "Value": 2,
+            "XpBonus": false
+          },
+          {
+            "Symbol": 2,
+            "Value": 1,
+            "XpBonus": true
+          },
+          {
+            "Symbol": 1,
+            "Value": 1,
+            "XpBonus": false
+          },
+          {
+            "Symbol": 0,
+            "Value": 1,
+            "XpBonus": false
+          },
+          {
+            "Symbol": 2,
+            "Value": 2,
+            "XpBonus": false
+          },
+          {
+            "Symbol": 0,
+            "Value": 2,
+            "XpBonus": false
+          }
+        ]
+      },
+      {
+        "WheelFaces": [
+          {
+            "Symbol": 1,
+            "Value": 1,
+            "XpBonus": true
+          },
+          {
+            "Symbol": 2,
+            "Value": 1,
+            "XpBonus": false
+          },
+          {
+            "Symbol": 2,
+            "Value": 1,
+            "XpBonus": true
+          },
+          {
+            "Symbol": 1,
+            "Value": 1,
+            "XpBonus": false
+          },
+          {
+            "Symbol": 2,
+            "Value": 1,
+            "XpBonus": false
+          },
+          {
+            "Symbol": 0,
+            "Value": 2,
+            "XpBonus": false
+          },
+          {
+            "Symbol": 1,
+            "Value": 2,
+            "XpBonus": false
+          },
+          {
+            "Symbol": 0,
+            "Value": 2,
+            "XpBonus": false
+          }
+        ]
+      },
+      {
+        "WheelFaces": [
+          {
+            "Symbol": 1,
+            "Value": 1,
+            "XpBonus": false
+          },
+          {
+            "Symbol": 2,
+            "Value": 1,
+            "XpBonus": false
+          },
+          {
+            "Symbol": 1,
+            "Value": 1,
+            "XpBonus": true
+          },
+          {
+            "Symbol": 2,
+            "Value": 1,
+            "XpBonus": false
+          },
+          {
+            "Symbol": 0,
+            "Value": 2,
+            "XpBonus": false
+          },
+          {
+            "Symbol": 1,
+            "Value": 1,
+            "XpBonus": false
+          },
+          {
+            "Symbol": 2,
+            "Value": 1,
+            "XpBonus": true
+          },
+          {
+            "Symbol": 0,
+            "Value": 2,
+            "XpBonus": false
+          }
+        ]
+      },
+      {
+        "WheelFaces": [
+          {
+            "Symbol": 1,
+            "Value": 1,
+            "XpBonus": false
+          },
+          {
+            "Symbol": 2,
+            "Value": 1,
+            "XpBonus": false
+          },
+          {
+            "Symbol": 0,
+            "Value": 1,
+            "XpBonus": false
+          },
+          {
+            "Symbol": 1,
+            "Value": 1,
+            "XpBonus": false
+          },
+          {
+            "Symbol": 2,
+            "Value": 1,
+            "XpBonus": false
+          },
+          {
+            "Symbol": 0,
+            "Value": 1,
+            "XpBonus": false
+          },
+          {
+            "Symbol": 1,
+            "Value": 1,
+            "XpBonus": false
+          },
+          {
+            "Symbol": 2,
+            "Value": 1,
+            "XpBonus": false
+          }
+        ]
+      }
+    ]
+  }
+}
