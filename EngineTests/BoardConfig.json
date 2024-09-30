@@ -1,5 +1,5 @@
 {
-  "Crown": { "Health": 5 },
+  "Crown": { "Health": 10 },
   "Wall": { "MaxHeight": 5 },
   "Figures": [
     {
@@ -57,228 +57,226 @@
       }
     }
   ],
-  "PlayerSpinner": {
-    "WheelSet": [
-      {
-        "WheelFaces": [
-          {
-            "Symbol": 1,
-            "Value": 1,
-            "XpBonus": false
-          },
-          {
-            "Symbol": 2,
-            "Value": 1,
-            "XpBonus": false
-          },
-          {
-            "Symbol": 1,
-            "Value": 1,
-            "XpBonus": false
-          },
-          {
-            "Symbol": 2,
-            "Value": 1,
-            "XpBonus": true
-          },
-          {
-            "Symbol": 1,
-            "Value": 1,
-            "XpBonus": false
-          },
-          {
-            "Symbol": 0,
-            "Value": 1,
-            "XpBonus": false
-          },
-          {
-            "Symbol": 2,
-            "Value": 2,
-            "XpBonus": true
-          },
-          {
-            "Symbol": 0,
-            "Value": 1,
-            "XpBonus": false
-          }
-        ]
-      },
-      {
-        "WheelFaces": [
-          {
-            "Symbol": 1,
-            "Value": 1,
-            "XpBonus": true
-          },
-          {
-            "Symbol": 2,
-            "Value": 1,
-            "XpBonus": false
-          },
-          {
-            "Symbol": 1,
-            "Value": 2,
-            "XpBonus": false
-          },
-          {
-            "Symbol": 2,
-            "Value": 1,
-            "XpBonus": true
-          },
-          {
-            "Symbol": 1,
-            "Value": 1,
-            "XpBonus": false
-          },
-          {
-            "Symbol": 0,
-            "Value": 1,
-            "XpBonus": false
-          },
-          {
-            "Symbol": 2,
-            "Value": 2,
-            "XpBonus": false
-          },
-          {
-            "Symbol": 0,
-            "Value": 2,
-            "XpBonus": false
-          }
-        ]
-      },
-      {
-        "WheelFaces": [
-          {
-            "Symbol": 1,
-            "Value": 1,
-            "XpBonus": true
-          },
-          {
-            "Symbol": 2,
-            "Value": 1,
-            "XpBonus": false
-          },
-          {
-            "Symbol": 2,
-            "Value": 1,
-            "XpBonus": true
-          },
-          {
-            "Symbol": 1,
-            "Value": 1,
-            "XpBonus": false
-          },
-          {
-            "Symbol": 2,
-            "Value": 1,
-            "XpBonus": false
-          },
-          {
-            "Symbol": 0,
-            "Value": 2,
-            "XpBonus": false
-          },
-          {
-            "Symbol": 1,
-            "Value": 2,
-            "XpBonus": false
-          },
-          {
-            "Symbol": 0,
-            "Value": 2,
-            "XpBonus": false
-          }
-        ]
-      },
-      {
-        "WheelFaces": [
-          {
-            "Symbol": 1,
-            "Value": 1,
-            "XpBonus": false
-          },
-          {
-            "Symbol": 2,
-            "Value": 1,
-            "XpBonus": false
-          },
-          {
-            "Symbol": 1,
-            "Value": 1,
-            "XpBonus": true
-          },
-          {
-            "Symbol": 2,
-            "Value": 1,
-            "XpBonus": false
-          },
-          {
-            "Symbol": 0,
-            "Value": 2,
-            "XpBonus": false
-          },
-          {
-            "Symbol": 1,
-            "Value": 1,
-            "XpBonus": false
-          },
-          {
-            "Symbol": 2,
-            "Value": 1,
-            "XpBonus": true
-          },
-          {
-            "Symbol": 0,
-            "Value": 2,
-            "XpBonus": false
-          }
-        ]
-      },
-      {
-        "WheelFaces": [
-          {
-            "Symbol": 1,
-            "Value": 1,
-            "XpBonus": false
-          },
-          {
-            "Symbol": 2,
-            "Value": 1,
-            "XpBonus": false
-          },
-          {
-            "Symbol": 0,
-            "Value": 1,
-            "XpBonus": false
-          },
-          {
-            "Symbol": 1,
-            "Value": 1,
-            "XpBonus": false
-          },
-          {
-            "Symbol": 2,
-            "Value": 1,
-            "XpBonus": false
-          },
-          {
-            "Symbol": 0,
-            "Value": 1,
-            "XpBonus": false
-          },
-          {
-            "Symbol": 1,
-            "Value": 1,
-            "XpBonus": false
-          },
-          {
-            "Symbol": 2,
-            "Value": 1,
-            "XpBonus": false
-          }
-        ]
-      }
-    ]
-  }
+  "WheelSet": [
+    {
+      "WheelFaces": [
+        {
+          "Symbol": 1,
+          "Value": 1,
+          "XpBonus": false
+        },
+        {
+          "Symbol": 2,
+          "Value": 1,
+          "XpBonus": false
+        },
+        {
+          "Symbol": 1,
+          "Value": 1,
+          "XpBonus": false
+        },
+        {
+          "Symbol": 2,
+          "Value": 1,
+          "XpBonus": true
+        },
+        {
+          "Symbol": 1,
+          "Value": 1,
+          "XpBonus": false
+        },
+        {
+          "Symbol": 0,
+          "Value": 1,
+          "XpBonus": false
+        },
+        {
+          "Symbol": 2,
+          "Value": 2,
+          "XpBonus": true
+        },
+        {
+          "Symbol": 0,
+          "Value": 1,
+          "XpBonus": false
+        }
+      ]
+    },
+    {
+      "WheelFaces": [
+        {
+          "Symbol": 1,
+          "Value": 1,
+          "XpBonus": true
+        },
+        {
+          "Symbol": 2,
+          "Value": 1,
+          "XpBonus": false
+        },
+        {
+          "Symbol": 1,
+          "Value": 2,
+          "XpBonus": false
+        },
+        {
+          "Symbol": 2,
+          "Value": 1,
+          "XpBonus": true
+        },
+        {
+          "Symbol": 1,
+          "Value": 1,
+          "XpBonus": false
+        },
+        {
+          "Symbol": 0,
+          "Value": 1,
+          "XpBonus": false
+        },
+        {
+          "Symbol": 2,
+          "Value": 2,
+          "XpBonus": false
+        },
+        {
+          "Symbol": 0,
+          "Value": 2,
+          "XpBonus": false
+        }
+      ]
+    },
+    {
+      "WheelFaces": [
+        {
+          "Symbol": 1,
+          "Value": 1,
+          "XpBonus": true
+        },
+        {
+          "Symbol": 2,
+          "Value": 1,
+          "XpBonus": false
+        },
+        {
+          "Symbol": 2,
+          "Value": 1,
+          "XpBonus": true
+        },
+        {
+          "Symbol": 1,
+          "Value": 1,
+          "XpBonus": false
+        },
+        {
+          "Symbol": 2,
+          "Value": 1,
+          "XpBonus": false
+        },
+        {
+          "Symbol": 0,
+          "Value": 2,
+          "XpBonus": false
+        },
+        {
+          "Symbol": 1,
+          "Value": 2,
+          "XpBonus": false
+        },
+        {
+          "Symbol": 0,
+          "Value": 2,
+          "XpBonus": false
+        }
+      ]
+    },
+    {
+      "WheelFaces": [
+        {
+          "Symbol": 1,
+          "Value": 1,
+          "XpBonus": false
+        },
+        {
+          "Symbol": 2,
+          "Value": 1,
+          "XpBonus": false
+        },
+        {
+          "Symbol": 1,
+          "Value": 1,
+          "XpBonus": true
+        },
+        {
+          "Symbol": 2,
+          "Value": 1,
+          "XpBonus": false
+        },
+        {
+          "Symbol": 0,
+          "Value": 2,
+          "XpBonus": false
+        },
+        {
+          "Symbol": 1,
+          "Value": 1,
+          "XpBonus": false
+        },
+        {
+          "Symbol": 2,
+          "Value": 1,
+          "XpBonus": true
+        },
+        {
+          "Symbol": 0,
+          "Value": 2,
+          "XpBonus": false
+        }
+      ]
+    },
+    {
+      "WheelFaces": [
+        {
+          "Symbol": 1,
+          "Value": 1,
+          "XpBonus": false
+        },
+        {
+          "Symbol": 2,
+          "Value": 1,
+          "XpBonus": false
+        },
+        {
+          "Symbol": 0,
+          "Value": 1,
+          "XpBonus": false
+        },
+        {
+          "Symbol": 1,
+          "Value": 1,
+          "XpBonus": false
+        },
+        {
+          "Symbol": 2,
+          "Value": 1,
+          "XpBonus": false
+        },
+        {
+          "Symbol": 0,
+          "Value": 1,
+          "XpBonus": false
+        },
+        {
+          "Symbol": 1,
+          "Value": 1,
+          "XpBonus": false
+        },
+        {
+          "Symbol": 2,
+          "Value": 1,
+          "XpBonus": false
+        }
+      ]
+    }
+  ]
 }

@@ -1,58 +1,56 @@
-using Xunit;
-
-using ConsoleRunner;
-using Engine.models;
+﻿using Engine.models;
+using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 using System.Text.Json;
+using System.Threading.Tasks;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace EngineTests
 {
-    public class UnitTest1
+    public static class TestHelpers
     {
-        [Fact]
-        public void WhenICallBuildBoardIGetTheCorrectBoard()
+        public static GameBoard GetBoard(string jsonFilePath)
         {
-            Runner runner = new Runner();
-            GameBoard board = runner.BuildBoard();
+            string boardConfigLocation = jsonFilePath;
 
-            Assert.NotNull(board);
-
-            Assert.True(board.Player1 != null);
-            Assert.True(board.Player2 != null);
-
-            Assert.True (board.Player1.Crown != null);
-            Assert.True (board.Player1.Wall != null);
-            Assert.True (board.Player1.Figures.Count() == 2);
-            Assert.True (board.Player1.PlayerSpinner != null);
-
-            Assert.True (board.Player2.Crown != null);
-            Assert.True (board.Player2.Wall != null);
-            Assert.True (board.Player2.Figures.Count() == 2);
-            Assert.True (board.Player2.PlayerSpinner != null);
-
+            string playerConfig = File.ReadAllText(boardConfigLocation);
+            Player player1 = JsonSerializer.Deserialize<Player>(playerConfig);
+            Player player2 = JsonSerializer.Deserialize<Player>(playerConfig);
+            return new GameBoard(player1, player2);
         }
 
-        [Fact]
-        public void JsonGenerator()
+        public static GameBoard GetBoard()
+        {
+            return new GameBoard(GetPlayer(), GetPlayer());
+        }
+
+        public static Player GetPlayer()
         {
             Dictionary<Level, LevelStats> warriorDictionary = new Dictionary<Level, LevelStats>
             {
-                { Level.Level1, new LevelStats(3, 3, 3, 5, [0]) },
-                { Level.Level2, new LevelStats(3, 5, 3, 5, [0]) },
-                { Level.Level3, new LevelStats(3, 7, 3, 5, [0]) },
+                { Level.Level1, new LevelStats(3, 5, [new Attack(3, 3, 0)]) },
+                { Level.Level2, new LevelStats(3, 5, [new Attack(5, 3, 0)]) },
+                { Level.Level3, new LevelStats(3, 5, [new Attack(7, 3, 0)]) }
             };
 
-            Figure warrior = new Figure(Level.Level1, 0, warriorDictionary);
+            Warrior warrior = new Warrior(warriorDictionary);
 
             Dictionary<Level, LevelStats> mageDictionary = new Dictionary<Level, LevelStats>
             {
-                { Level.Level1, new LevelStats(5, 2, 2, 5, [0]) },
-                { Level.Level2, new LevelStats(4, 3, 3, 5, [0]) },
-                { Level.Level3, new LevelStats(4, 3, 5, 5, [0, 6]) }
+                { Level.Level1, new LevelStats(5, 5, [new Attack(2, 2, 0)]) },
+                { Level.Level2, new LevelStats(4, 5, [new Attack(3, 3, 0)]) },
+                { Level.Level3, new LevelStats(4, 5, [new Attack(3, 5, 0), new Attack(3, 5, 6)]) }
             };
-            Figure mage = new Figure(Level.Level1, 0, mageDictionary);
+            Mage mage = new Mage(mageDictionary);
 
-            List<Wheel> wheelList = new List<Wheel> 
+            return new Player(new Crown(5), new Wall(5), [warrior, mage], GetWheelSet());
+        }
+
+        public static WheelSet GetWheelSet()
+        {
+            List<Wheel> wheelList = new List<Wheel>
             {
                 new Wheel(new List<WheelFace>
                 {
@@ -110,20 +108,8 @@ namespace EngineTests
                     new WheelFace(Symbol.FigureTwo, 1, false)
                 })
             };
-            Spinner spinner = new Spinner(wheelList);
 
-            Player player1 = new Player(new Crown(5), new Wall(5), [warrior, mage], spinner);
-
-             
-            string json = JsonSerializer.Serialize(player1);
-        }
-
-        [Fact]
-        public void UseJsonForBoard()
-        {
-           string tes = Directory.GetCurrentDirectory();
-
-            //Player player1 = 
+            return new WheelSet(wheelList, new Random());
         }
     }
 }

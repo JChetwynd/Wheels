@@ -8,7 +8,7 @@ namespace ConsoleRunner
         {
             Runner runner = new Runner();
 
-            runner.BuildBoard();
+            //runner.BuildBoard();
         }
     }
 }
