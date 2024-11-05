@@ -43,7 +43,7 @@ namespace EngineTests
 
             //WHEN Action Points hit the threshold...
             Assert.Equal(5, opponent.Wall.Height);
-            warrior.IncreaseActionPoints(4, opponent);
+            warrior.IncreaseActionPoints(2, opponent);
 
             //THEN Wall height impacted
             Assert.Equal(3, opponent.Wall.Height);
@@ -55,20 +55,32 @@ namespace EngineTests
             Assert.Equal(4, warrior.CurrentXp);
 
             //WHEN XP hits Threshold
+            warrior.IncreaseXp(3);
 
             //THEN Level increases to 2
+            Assert.Equal(Level.Level2, warrior.CurrentLevel);
 
             //WHEN Action Points hit the threshold with increased level...
+            Assert.Equal(3, opponent.Wall.Height);
+            warrior.IncreaseActionPoints(4, opponent);
 
             //THEN damage is higher and the wall height is 0
+            Assert.Equal(0, opponent.Wall.Height);
 
             //WHEN XP hits Threshold a second time
+            warrior.IncreaseXp(3);
 
             //THEN Level increases to 3
+            Assert.Equal(Level.Level3, warrior.CurrentLevel);
 
-            //AND damage is even higher
+            //WHEN Action Points hit the threshold with increased level...
+            warrior.IncreaseActionPoints(4, opponent);
+
+            //THEN damage is even higher
+            Assert.Equal(7, warrior.FigureStats[warrior.CurrentLevel].Attacks[0].DamageToWall);
 
             //AND the crown is damaged
+            Assert.Equal(2, opponent.Crown.Health);
         }
     }
 }

@@ -16,7 +16,7 @@ namespace Engine.models
             FigureStats = figureStats;
         }
 
-        public Level CurrentLevel { get; }
+        public Level CurrentLevel { get; private set; }
         public int CurrentXp { get; private set; }
         public int CurrentActionPoints { get; private set; }
         public Dictionary<Level, LevelStats> FigureStats { get; private set; }
@@ -24,7 +24,17 @@ namespace Engine.models
         public void IncreaseXp(int val)
         {
             CurrentXp += val;
+            if(CurrentXp >= FigureStats[CurrentLevel].XpToLevelUp)
+            {
+                IncreaseLevel();
+            }
         }
+
+        private void IncreaseLevel()
+        {
+            CurrentLevel++;
+        }
+
         public void IncreaseActionPoints(int APToAdd, Player opponent)
         {
             CurrentActionPoints += APToAdd;
