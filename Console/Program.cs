@@ -6,9 +6,7 @@ namespace ConsoleRunner
     {
         static void Main(string[] args)
         {
-            Runner runner = new Runner();
 
-            //runner.BuildBoard();
         }
     }
 }

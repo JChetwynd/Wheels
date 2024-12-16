@@ -88,6 +88,12 @@ namespace Engine.models
             InPlay.IsHeld = false;
         }
     }
+    public enum Symbol
+    {
+        Wall,
+        FigureOne,
+        FigureTwo
+    }
 
     public class InPlay
     {
@@ -100,12 +106,4 @@ namespace Engine.models
         public bool IsFacingUp { get; set; }
         public bool IsHeld { get; set; }
     }
-
-    public enum Symbol
-    {
-        Wall,
-        FigureOne,
-        FigureTwo
-    }
-
 }
