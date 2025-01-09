@@ -12,8 +12,9 @@ namespace ConsoleRunnerTests
     {
         static void Main(string[] args)
         {
-            var ws = TestHelpers.GetWheelSet();
-            Runner runner = new Runner(ws);
+            var ws1 = TestHelpers.GetWheelSet();
+            var ws2 = TestHelpers.GetWheelSet();
+            Runner runner = new Runner(ws1, ws2);
 
             runner.run();
         }
